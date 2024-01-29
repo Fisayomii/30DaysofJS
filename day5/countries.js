@@ -37,21 +37,19 @@ const fullStack = frontEnd.concat(backEnd);
 
 console.log(fullStack);
 
-const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
-console.log(ages.sort());
-console.log(ages[0]);
-console.log(ages.lastIndexOf);
-let totalAges =
-  ages[0] +
-  ages[1] +
-  ages[2] +
-  ages[3] +
-  ages[4] +
-  ages[5] +
-  ages[6] +
-  ages[7] +
-  ages[8] +
-  ages[9];
-let averageAge = totalAges / ages.length;
-console.log(averageAge);
-console.log(ages.length - 1);
+console.log(countries.slice(0, 10));
+
+const middleIndex = Math.floor(countries.length / 2);
+const middleElement = countries[middleIndex];
+
+console.log("Middle Element:", middleElement);
+
+const firstHalf = countries.slice(0, middleIndex);
+const secondHalf = countries.slice(middleIndex + 1);
+
+if (countries.length % 2 === 0) {
+  console.log(firstHalf, secondHalf);
+} else {
+  secondHalf.push("Nigeria");
+  console.log(secondHalf);
+}

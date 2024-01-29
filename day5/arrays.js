@@ -51,3 +51,30 @@ console.log(itCompanies.splice([3], 1));
 console.log(itCompanies.pop());
 console.log(itCompanies.splice(0, itCompanies.length));
 console.log(itCompanies);
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+console.log(ages.sort());
+console.log(ages[0]);
+console.log(ages.lastIndexOf);
+let totalAges =
+  ages[0] +
+  ages[1] +
+  ages[2] +
+  ages[3] +
+  ages[4] +
+  ages[5] +
+  ages[6] +
+  ages[7] +
+  ages[8] +
+  ages[9];
+let averageAge = totalAges / ages.length;
+console.log(averageAge);
+console.log(ages[9] - ages[0]);
+
+const min = Math.min(...ages);
+const max = Math.max(...ages);
+console.log(min);
+console.log(max);
+
+console.log(Math.abs(min - averageAge));
+console.log(Math.abs(max - averageAge));
